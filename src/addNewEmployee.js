@@ -12,19 +12,9 @@ export default class AddNewEmployee extends Component
     render(){
         return(
             <div className="login">
-            <table>
-            <tr>
-            <td>Employee Name <input type="text" onChange={e=>this.updateState(e)} name="name" value={this.state.name}></input></td>
-            </tr>
-            <tr>
-            <td>Employee Age <input type="number" onChange={e=>this.updateState(e)} name="age" value={this.state.age}></input></td>
-            </tr>
-            <tr>
-            <td>
+            Employee Name <input type="text" onChange={e=>this.updateState(e)} name="name" value={this.state.name}></input>
+            Employee Age <input type="number" onChange={e=>this.updateState(e)} name="age" value={this.state.age}></input>
             <button onClick={()=>this.submitData()}>Submit</button>
-            </td>
-            </tr>
-            </table>
             </div>
         )
     }
